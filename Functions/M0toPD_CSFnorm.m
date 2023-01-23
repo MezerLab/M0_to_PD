@@ -19,9 +19,13 @@ seg = readFileNifti(opt.segfile);
 seg = seg.data;
 
 CSF = median(PD(BM==1&seg==0));
-PD = PD./CSF;
+WF = PD./CSF;
+
+WF(WF<0)=0; %too low
+WF(WF>2)=2; %too high
+
 
 opt.WF_file = fullfile(opt.outDir, 'WF.nii.gz')
-dtiWriteNiftiWrapper(PD,xform,opt.WF_file);
+dtiWriteNiftiWrapper(WF,xform,opt.WF_file);
 end
 
