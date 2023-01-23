@@ -52,7 +52,7 @@ end
 smoothkernel=opt.smoothkernel;
 
 % The poly basis to fit the coil gains
-pBasis = PDtoM0_CreatePoly(opt.boxS,opt.degrees,3,opt.BasisFlag);
+pBasis = M0toPD_CreatePoly(opt.boxS,opt.degrees,3,opt.BasisFlag);
 
 nVoxels=size(pBasis,1);
 nPolyCoef=size(pBasis,2);
@@ -80,7 +80,7 @@ for jj= st:ed
     [fb(Iter,1,1), fb(Iter,1,2), fb(Iter,1,3)]=ind2sub(size(opt.X),opt.wh(jj));
     
     % Get all the relevant box data for the fit
-    [M01, tmap, BM1, SZ, skip(Iter)]= PDtoM0_GetM0_boxData(opt,Tmap,M0,BM,fb(Iter,1,:),smoothkernel,seg);
+    [M01, tmap, BM1, SZ, skip(Iter)]= M0toPD_GetM0_boxData(opt,Tmap,M0,BM,fb(Iter,1,:),smoothkernel,seg);
     tmap = tmap.*Qmap_factor;
     
     
