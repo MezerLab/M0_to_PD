@@ -1,4 +1,4 @@
-function [logname]=M0_ToPD(outDir, Qmap_file, M0_file, BM_file, seg_file,Qmap_factor)
+function M0_ToPD(outDir, Qmap_file, M0_file, BM_file, seg_file,Qmap_factor)
 %
 % This function performs the M0-PD fit. The local fits are joined together into
 % one PD image.
