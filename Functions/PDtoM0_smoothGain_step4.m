@@ -1,4 +1,4 @@
-function [opt, G, PD]=mrQ_smoothGain_step4(opt,PD)
+function [opt, G, PD]=PDtoM0_smoothGain_step4(opt,PD)
 
 %multi coil M0
 M0=readFileNifti(opt.M0file);
