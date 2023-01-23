@@ -1,5 +1,5 @@
-function [Cbox,SHub] =PDtoM0_boxScaleGlobLinear(ScaleMat)
-%[Cbox,SHub] =PDtoM0_boxScaleGlobLinear(ScaleMat) 
+function [Cbox,SHub] =M0toPD_boxScaleGlobLinear(ScaleMat)
+%[Cbox,SHub] =M0toPD_boxScaleGlobLinear(ScaleMat) 
 %
 % We will find the scale of each box so it will agree with the values in
 % the overlap boxes (a scalar term). We assume that the boxPD  are free
