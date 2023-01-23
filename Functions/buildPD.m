@@ -151,3 +151,7 @@ tmpfile=fullfile(opt.outDir,'Boxtmp');
 % Get a smooth coil sensitivity in all locations, bring back to original image space, and calculate PD
 [opt]=M0toPD_smoothGain_step4(opt,PD_fit); 
 
+%% V. Step 5
+% normalize the PD map to the CSF to get WF map
+[opt]=M0toPD_CSFnorm(opt);
+
