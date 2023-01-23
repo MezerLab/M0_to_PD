@@ -10,6 +10,7 @@ function [logname]=M0_ToPD(outDir, Qmap_file, M0_file, BM_file, seg_file,Qmap_fa
 %                   will be fitted to.
 %       - M0_file - path of the directory of the M0 file to transform to
 %                   PD (in weighted images, PDw image can be used here).
+%       - BM_file - path to a brainmask file - 1 inside the brain, 0 outside.
 %       - seg_file - path to a segmentation file that contains typically 3
 %                   different segment types (CSF, GM, WM).
 %       - Qmap_factor - a scalar, to be determined with respect to the
