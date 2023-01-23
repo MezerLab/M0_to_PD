@@ -153,7 +153,7 @@ opt.donemask = donemask;
 for i=1:prod(size(opt.X))
     
     [fb(1) fb(2) fb(3)] = ind2sub(size(opt.X),i);
-    [empty] = mrQ_isDataBox(opt,brainMask,fb,opt.Inclusion_Criteria);
+    [empty] = PDtoM0_isDataBox(opt,brainMask,fb,opt.Inclusion_Criteria);
     if empty == 0 % this is a good box
         opt.wh(ii) = i;
         ii = ii+1;
