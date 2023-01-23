@@ -140,14 +140,14 @@ tmpfile=fullfile(opt.outDir,'Boxtmp');
 
 % Solving the box weights by a system of linear equations that adjusts the
 % median ratio between all the boxes
-[Cbox SHub]=PDtoM0_boxScaleGlobLinear(ScaleMat);
+[Cbox SHub]=M0toPD_boxScaleGlobLinear(ScaleMat);
 
 %% V. Step 3
 % Join the boxes to a PD image. 
 
-[PD_fit,opt]= PDtoM0_BoxJoinBox(Boxes,Cbox,opt);
+[PD_fit,opt]=M0toPD_BoxJoinBox(Boxes,Cbox,opt);
 
 %% VI. Step 4
 % Get a smooth coil sensitivity in all locations, bring back to original image space, and calculate PD
-[opt]=PDtoM0_smoothGain_step4b(opt,PD_fit); 
+[opt]=M0toPD_smoothGain_step4b(opt,PD_fit); 
 
