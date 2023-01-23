@@ -46,7 +46,7 @@ BM=readFileNifti(opt.BMfile);
 BM=BM.data;
 
 smoothkernel=opt.smoothkernel;
-pBasis = mrQ_CreatePoly(opt.boxS,opt.degrees,3,opt.BasisFlag);
+pBasis = M0toPD_CreatePoly(opt.boxS,opt.degrees,3,opt.BasisFlag);
 
 nPolyCoef=size(pBasis,2);
 nVoxels=size(pBasis,1);
