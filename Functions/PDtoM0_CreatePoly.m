@@ -1,9 +1,9 @@
 function [pBasis, pTerms, nSamples] = ...
-    mrQ_CreatePoly(boxS,pOrder,sDim,BasisFlag)
+    PDtoM0_CreatePoly(boxS,pOrder,sDim,BasisFlag)
 % Build 2D polynomial matrix
 %
 %     [pBasis, pTerms, nSamples] = ...
- %        mrQ_CreatePoly(boxS,pOrder,sDim,BasisFlag)
+ %        PDtoM0_CreatePoly(boxS,pOrder,sDim,BasisFlag)
 %
 % boxS: the     X Y Z size of the box
 % pOrder  :     polynomial order (linear, quadratic, cubic)
