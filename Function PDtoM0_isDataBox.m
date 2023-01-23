@@ -1,5 +1,5 @@
-function [empty] = mrQ_isDataBox(opt,brainMask,fb,Inclusion_Criteria)
-% [empty] = mrQ_isDataBox(opt,brainMask,fb,Inclusion_Criteria)
+function [empty] = PDtoM0_isDataBox(opt,brainMask,fb,Inclusion_Criteria)
+% [empty] = PDtoM0_isDataBox(opt,brainMask,fb,Inclusion_Criteria)
 % 
 % Comments to come...
 % 
