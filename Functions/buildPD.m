@@ -149,5 +149,5 @@ tmpfile=fullfile(opt.outDir,'Boxtmp');
 
 %% VI. Step 4
 % Get a smooth coil sensitivity in all locations, bring back to original image space, and calculate PD
-[opt]=M0toPD_smoothGain_step4b(opt,PD_fit); 
+[opt]=M0toPD_smoothGain_step4(opt,PD_fit); 
 
