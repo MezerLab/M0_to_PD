@@ -1,5 +1,5 @@
 function [pBasis, pTerms, nSamples] = ...
-    PDtoM0_CreatePoly(boxS,pOrder,sDim,BasisFlag)
+    M0toPD_CreatePoly(boxS,pOrder,sDim,BasisFlag)
 % Build 2D polynomial matrix
 %
 %     [pBasis, pTerms, nSamples] = ...
