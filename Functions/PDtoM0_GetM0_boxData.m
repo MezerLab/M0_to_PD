@@ -1,7 +1,7 @@
 function [M01, t1, BM1,boxSize, skip , Segmask,meanVal, XX, YY, ZZ]= ...
-    mrQ_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
+    PDtoM0_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
 %[M01, t1, BM1,boxSize, skip , Segmask,meanVal, XX, YY, ZZ]= ...
-%    mrQ_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
+%    PDtoM0_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
 %
 % Loads  data from the M0 and T1 file for a box defined by fb and opt
 %
