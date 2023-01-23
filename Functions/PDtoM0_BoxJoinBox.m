@@ -1,9 +1,9 @@
-function [PD_fit, opt]= mrQ_BoxJoinBox(Boxes,Cbox,opt,BMfile)
-% [PD_fit, opt]= mrQ_BoxJoinBox(Boxes,Cbox,opt,BMfile)
+function [PD_fit, opt]= PDtoM0_BoxJoinBox(Boxes,Cbox,opt,BMfile)
+% [PD_fit, opt]= BoxJoinBox(Boxes,Cbox,opt,BMfile)
 %
 % This is Step 4 of 6 (including Step 0) in the pipeline to build the WF
 % (water fraction) map. In this step, the boxes from the previous steps
-% (mrQ_boxScaleGlobLinear) are joined together to form the PD image.
+% (boxScaleGlobLinear) are joined together to form the PD image.
 %
 %
 % ~INPUTS~
