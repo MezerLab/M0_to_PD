@@ -56,6 +56,6 @@ RepErrThreshold=[];
 ErrorThresh=0.01;
 PrcCutOff=[];
                               
-logname=buildPD_SM(logname,RepErrThreshold,PrcCutOff,ErrorThresh);
+logname=buildPD(logname,RepErrThreshold,PrcCutOff,ErrorThresh);
 %
 
