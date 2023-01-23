@@ -57,7 +57,7 @@ for ii=BoxesToUse
     [fb(1,1,1), fb(1,1,2), fb(1,1,3)]=ind2sub(size(opt.X),opt.wh(ii));
     
     % get all the relevant box data for the fit
-    [M01, ~, ~, ~, ~, ~,~, XX, YY, ZZ ]= mrQ_GetM0_boxData(opt,[],M0,BM,fb(1,1,:),smoothkernel);
+    [M01, ~, ~, ~, ~, ~,~, XX, YY, ZZ ]= M0toPD_GetM0_boxData(opt,[],M0,BM,fb(1,1,:),smoothkernel);
     M0_v=M01(:);
         
 
