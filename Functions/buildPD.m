@@ -130,24 +130,24 @@ tmpfile=fullfile(opt.outDir,'Boxtmp');
 %% III. Step 1
 % Get the location and PD information for each box we will use
 
-    [Boxes, PositiveBoxs,UnCorBoxs, UnSTDBoxs]=CalBoxPD_step1a_SM(opt,BoxesToUse,CoilGains);
+    [Boxes, PositiveBoxs,UnCorBoxs, UnSTDBoxs]=CalBoxPD_step1a(opt,BoxesToUse,CoilGains);
     BoxesToUse=find(PositiveBoxs & UnSTDBoxs==0)';
 
 %% IV. Step 2
 % Find the ratio for each box's PD with its neighbors
 
-[Boxes, ScaleMat]=ScaleBoxes_step2_SM(Boxes,BoxesToUse,opt,ErrorThresh);
+[Boxes, ScaleMat]=ScaleBoxes_step2(Boxes,BoxesToUse,opt,ErrorThresh);
 
 % Solving the box weights by a system of linear equations that adjusts the
 % median ratio between all the boxes
-[Cbox SHub]=mrQ_boxScaleGlobLinear(ScaleMat);
+[Cbox SHub]=PDtoM0_boxScaleGlobLinear(ScaleMat);
 
 %% V. Step 3
 % Join the boxes to a PD image. 
 
-[PD_fit,opt]= mrQ_BoxJoinBox(Boxes,Cbox,opt);
+[PD_fit,opt]= PDtoM0_BoxJoinBox(Boxes,Cbox,opt);
 
 %% VI. Step 4
 % Get a smooth coil sensitivity in all locations, bring back to original image space, and calculate PD
-[opt]=mrQ_smoothGain_step4b(opt,PD_fit); 
+[opt]=PDtoM0_smoothGain_step4b(opt,PD_fit); 
 
