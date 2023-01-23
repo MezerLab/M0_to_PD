@@ -1,4 +1,4 @@
-[opt]=M0toPD_CSFnorm(opt);
+function [opt]=M0toPD_CSFnorm(opt);
 
 % This function allows for normalization by the median of the CSF
 %
@@ -23,5 +23,5 @@ PD = PD./CSF;
 
 opt.WF_file = fullfile(opt.outDir, 'WF.nii.gz')
 dtiWriteNiftiWrapper(PD,xform,opt.WF_file);
-
+end
 
