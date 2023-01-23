@@ -1,5 +1,5 @@
 function [M01, t1, BM1,boxSize, skip , Segmask,meanVal, XX, YY, ZZ]= ...
-    PDtoM0_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
+    M0toPD_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
 %[M01, t1, BM1,boxSize, skip , Segmask,meanVal, XX, YY, ZZ]= ...
 %    PDtoM0_GetM0_boxData(opt,T1,M0,BM,fb,smoothkernel,seg,Inclusion_Criteria)
 %
