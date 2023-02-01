@@ -105,7 +105,7 @@ if (exist(BMfile,'file'))
     
     if outMm(1)~=0 % Unless we don't want to change the fitting resolution
        if (outMm(1)~=mmPerVox(1) || outMm(2)~=mmPerVox(2) || outMm(3)~=mmPerVox(3) )
-          [opt]=mrQ_resamp4G_fit(opt,outMm);
+          [opt]=M0toPD_resamp4G(opt,outMm);
            brainMask = readFileNifti(opt.BMfile);
            mmPerVox  = brainMask.pixdim;
        end
