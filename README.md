@@ -17,6 +17,6 @@ The main function is M0_toPD.m
 * PD file with a fixed bias field.
 
 # Software requirments:
-MATLAB - http://www.mathworks.com/products/matlab/
-Vistasoft - https://github.com/vistalab/vistasoft
-SPM8 - https://github.com/spm/spm8
+* MATLAB - http://www.mathworks.com/products/matlab/
+* Vistasoft - https://github.com/vistalab/vistasoft
+* SPM8 - https://github.com/spm/spm8
