@@ -91,6 +91,10 @@ else
     
 end
 
+
+% segmenting R1 to tissue types
+    opt.segfile=SEGfile;
+
 if (exist(BMfile,'file'))
     disp(['Loading brain Mask data from ' BMfile '...']);
     brainMask = readFileNifti(BMfile);
@@ -115,8 +119,6 @@ else
     error('Cannot find the file: %s', BMfile);
 end
 
-% segmenting R1 to tissue types
-    opt.segfile=SEGfile;
  
 %% II. Identify the boxes we want to fit
 
