@@ -30,7 +30,7 @@ function []=M0_ToPD(outDir, Qmap_file, M0_file, BM_file, seg_file,Qmap_factor)
 %%
 
 degrees = 2;                    % the polynom degree used to fit the gain
-outMm = [1 1 1];                % the resolution (in mm) on which to perform the fit
+outMm = 0; %[1 1 1];            % the resolution (in mm) on which to perform the fit (0 if we don't want to change it)
 boxSize = 14;                   % the box size on which to perform the fit
 Inclusion_Criteria = [0.7 100]; % which boxes to exclude?
 percent_overlap = 0.5;          % percent of overlap between boxes
